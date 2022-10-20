@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: 	#32CD32;
+    padding: 150px;
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -300px;
+}
+
+nav {
+    background-color: forestgreen;
+    padding: 6px;
+    font-size: 25px;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    padding: 22px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+#content img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 600px;
+}
+
+h2, h3 {
+    color: forestgreen;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+  
+.profil {
+    text-align: center;
+}
+
+.profil img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+    color: azure;
+    background-color: forestgreen;
+    padding: 16px;
+    font-weight: bold
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+@media screen and  (max-width: 1000px) {
+    .jumbotron {
+        padding: 112px;
+    }
+
+    .jumbotron a {
+        font-size: 30px;
+   }
+
+
+   .jumbotron p {
+        font-size: 28px;
+   }
+    nav {
+        padding: 2px;
+    }
+
+    nav li {
+        margin: 4px;
+        font-size: 19px;
+    }
+} 
